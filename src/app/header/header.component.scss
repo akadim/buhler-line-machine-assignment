@@ -1,0 +1,34 @@
+@import "../../_variables";
+
+:host {
+  background: $grey-background;
+  display: flex;
+  padding: 5px;
+  border-bottom: 5px solid $buhler-green;
+}
+
+.logo {
+  flex-grow: 1;
+  padding: 10px;
+  img {
+    width: 150px;
+  }
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.time-section,
+.user-profile-section {
+  margin: 5px 15px;
+
+  mat-icon {
+    margin-right: 5px;
+  }
+
+  span {
+    vertical-align: 7px;
+  }
+}

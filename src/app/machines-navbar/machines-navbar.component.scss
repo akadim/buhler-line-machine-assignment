@@ -1,0 +1,23 @@
+@import "../../_variables";
+
+:host {
+  background: $grey-background;
+  display: flex;
+}
+
+.navbar-list {
+  display: flex;
+  height: 55px;
+}
+
+.navbar-item {
+  position: relative;
+  width: 100px;
+}
+
+.navbar-item-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  text-decoration: none;
+}

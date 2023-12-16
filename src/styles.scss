@@ -1,0 +1,41 @@
+@import "./_variables";
+
+* {
+  color: $buhler-black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.running-bg {
+  background: $grey-background;
+}
+
+.alarm-bg {
+  background: $alarm-state;
+}
+
+.warning-bg {
+  background: $warning-state;
+}
+
+.running-state-icon {
+  color: $running-state;
+}
+
+.running-state-content {
+  color: $buhler-black;
+}
+
+.not-running {
+  color: $buhler-white;
+}
+
+.status-icon {
+  font-size: 20px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}

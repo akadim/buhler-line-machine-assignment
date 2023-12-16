@@ -1,0 +1,18 @@
+@import "../../_variables";
+
+:host {
+  display: flex;
+  padding-left: 70px;
+}
+
+.machine-item-wrapper {
+  display: flex;
+  padding: 130px 0;
+}
+
+.pipe-line {
+  background: $pipeline-color;
+  width: 150px;
+  height: 5px;
+  margin-top: 50px;
+}
