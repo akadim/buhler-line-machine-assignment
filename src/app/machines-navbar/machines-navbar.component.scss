@@ -3,21 +3,14 @@
 :host {
   background: $grey-background;
   display: flex;
+  height: 50px;
 }
 
 .navbar-list {
   display: flex;
-  height: 55px;
 }
 
 .navbar-item {
   position: relative;
   width: 100px;
-}
-
-.navbar-item-link {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  text-decoration: none;
 }

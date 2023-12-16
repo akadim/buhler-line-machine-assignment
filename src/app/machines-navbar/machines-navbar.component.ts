@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProductionMachine } from '../production-machine';
+import { Machine } from '../machine';
 import { LineMachineEnums } from '../line-machine-enums';
 
 @Component({
@@ -8,6 +8,6 @@ import { LineMachineEnums } from '../line-machine-enums';
   styleUrls: ['./machines-navbar.component.scss'],
 })
 export class MachinesNavbarComponent {
-  @Input() machines?: ProductionMachine[];
+  @Input() machines!: Machine[];
   protected readonly LineMachineEnums = LineMachineEnums;
 }

@@ -8,6 +8,7 @@ import { MachinesNavbarComponent } from './machines-navbar/machines-navbar.compo
 import { HeaderComponent } from './header/header.component';
 import { DatePipe } from '@angular/common';
 import { LineMachineItemComponent } from './line-machine-item/line-machine-item.component';
+import { MachinesNavbarItemComponent } from './machines-navbar-item/machines-navbar-item.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LineMachineItemComponent } from './line-machine-item/line-machine-item.
     MachinesNavbarComponent,
     HeaderComponent,
     LineMachineItemComponent,
+    MachinesNavbarItemComponent,
   ],
   imports: [BrowserModule, MatIconModule],
   providers: [DatePipe],

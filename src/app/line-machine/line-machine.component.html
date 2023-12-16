@@ -3,5 +3,5 @@
   class="machine-item-wrapper"
 >
   <app-line-machine-item [machine]="machine"></app-line-machine-item>
-  <div class="pipe-line" *ngIf="$any(machines)?.length - 1 > i"></div>
+  <div class="pipe-line" *ngIf="machines.length - 1 > i"></div>
 </div>

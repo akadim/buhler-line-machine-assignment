@@ -3,11 +3,11 @@ import { Machine } from '../machine';
 import { LineMachineEnums } from '../line-machine-enums';
 
 @Component({
-  selector: 'app-line-machine-item',
-  templateUrl: './line-machine-item.component.html',
-  styleUrls: ['./line-machine-item.component.scss'],
+  selector: 'app-machines-navbar-item',
+  templateUrl: './machines-navbar-item.component.html',
+  styleUrls: ['./machines-navbar-item.component.scss'],
 })
-export class LineMachineItemComponent {
+export class MachinesNavbarItemComponent {
   @Input() machine!: Machine;
   protected readonly LineMachineEnums = LineMachineEnums;
 }

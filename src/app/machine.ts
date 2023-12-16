@@ -1,6 +1,6 @@
 import { LineMachineEnums } from './line-machine-enums';
 
-export interface ProductionMachine {
+export interface Machine {
   title: string;
   icon: string;
   state: LineMachineEnums;

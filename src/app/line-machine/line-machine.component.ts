@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProductionMachine } from '../production-machine';
+import { Machine } from '../machine';
 
 @Component({
   selector: 'app-line-machine',
@@ -7,5 +7,5 @@ import { ProductionMachine } from '../production-machine';
   styleUrls: ['./line-machine.component.scss'],
 })
 export class LineMachineComponent {
-  @Input() machines?: ProductionMachine[];
+  @Input() machines!: Machine[];
 }

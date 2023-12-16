@@ -1,27 +1,17 @@
-# BuhlerLineMachinesAssignment
+# Buhler Line Machines Assignment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Important Notes:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  - You will notice that Attacher, Packer and the Running state icons are quite different, I used the ones in the project just to save up time, since I didn't find the other icons right away.
+  - You will find the Machine model `machine.ts` and the machine state enum `line-machine-enum.ts` in the src folder (Normally I put those files in a component folder or a separate folder).
 
-## Build
+## Author
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+KADIM Ahmed
