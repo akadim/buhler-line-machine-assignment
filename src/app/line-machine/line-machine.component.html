@@ -1,7 +1,0 @@
-<div
-  *ngFor="let machine of machines; let i = index"
-  class="machine-item-wrapper"
->
-  <app-line-machine-item [machine]="machine"></app-line-machine-item>
-  <div class="pipe-line" *ngIf="machines.length - 1 > i"></div>
-</div>

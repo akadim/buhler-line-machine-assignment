@@ -1,0 +1,26 @@
+<div
+  class="machine-section"
+  [ngClass]="{
+       'running-bg': machine.state === 'RUNNING',
+       'alarm-bg': machine.state === 'ALARM',
+       'warning-bg': machine.state === 'WARNING',
+    }"
+>
+  <mat-icon
+    class="status-icon"
+    [ngClass]="{
+      'running-state-icon': machine.state === 'RUNNING',
+      'not-running-state': machine.state !== 'RUNNING'
+    }"
+    >{{ LineMachineEnums[machine.state] }}</mat-icon
+  >
+  <div
+    class="machine-body-content"
+    [ngClass]="{
+      'not-running-state': machine.state !== 'RUNNING'
+    }"
+  >
+    <mat-icon class="machine-icon">{{ machine.icon }}</mat-icon>
+    {{ machine.title }}
+  </div>
+</div>

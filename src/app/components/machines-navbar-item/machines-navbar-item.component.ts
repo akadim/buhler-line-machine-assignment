@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Machine } from '../machine';
-import { LineMachineEnums } from '../line-machine-enums';
+import { Machine } from '../../machine';
+import { LineMachineEnums } from '../../line-machine-enums';
 
 @Component({
   selector: 'app-machines-navbar-item',

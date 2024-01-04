@@ -1,0 +1,16 @@
+<a
+  href="#"
+  class="navbar-item-link"
+  [ngClass]="{
+    'not-running-state': machine.state !== 'RUNNING'
+  }"
+  >{{ machine.title }}</a
+>
+<mat-icon
+  class="status-icon"
+  [ngClass]="{
+    'running-state-icon': machine.state === 'RUNNING',
+    'not-running-state': machine.state !== 'RUNNING'
+  }"
+  >{{ LineMachineEnums[machine.state] }}</mat-icon
+>

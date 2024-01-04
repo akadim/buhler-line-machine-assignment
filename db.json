@@ -1,0 +1,24 @@
+{
+  "machines": [
+    {
+      "title": "Scale",
+      "icon": "system_update_alt",
+      "state": "RUNNING"
+    },
+    {
+      "title": "Attacher",
+      "icon": "list_alt",
+      "state": "ALARM"
+    },
+    {
+      "title": "Packer",
+      "icon": "call_to_action_outlined",
+      "state": "RUNNING"
+    },
+    {
+      "title": "Closer",
+      "icon": "grid_on",
+      "state": "WARNING"
+    }
+  ]
+}

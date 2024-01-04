@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { LineMachineComponent } from './line-machine/line-machine.component';
+import { LineMachineComponent } from './components/line-machine/line-machine.component';
 import { MatIconModule } from '@angular/material/icon';
-import { MachinesNavbarComponent } from './machines-navbar/machines-navbar.component';
-import { HeaderComponent } from './header/header.component';
+import { MachinesNavbarComponent } from './components/machines-navbar/machines-navbar.component';
+import { HeaderComponent } from './components/header/header.component';
 import { DatePipe } from '@angular/common';
-import { LineMachineItemComponent } from './line-machine-item/line-machine-item.component';
-import { MachinesNavbarItemComponent } from './machines-navbar-item/machines-navbar-item.component';
+import { LineMachineItemComponent } from './components/line-machine-item/line-machine-item.component';
+import { MachinesNavbarItemComponent } from './components/machines-navbar-item/machines-navbar-item.component';
+import { HttpClientModule } from '@angular/common/http';
+import { environment } from '../environments/environment.development';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,14 @@ import { MachinesNavbarItemComponent } from './machines-navbar-item/machines-nav
     LineMachineItemComponent,
     MachinesNavbarItemComponent,
   ],
-  imports: [BrowserModule, MatIconModule],
-  providers: [DatePipe],
+  imports: [BrowserModule, MatIconModule, HttpClientModule],
+  providers: [
+    DatePipe,
+    {
+      provide: 'BASE_API_URL',
+      useValue: environment.apiUrl,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

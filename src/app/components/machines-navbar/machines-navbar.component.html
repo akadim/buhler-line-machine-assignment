@@ -1,10 +1,10 @@
 <div class="navbar-list">
   <div
-    *ngFor="let machine of machines"
+    *ngFor="let machine of machines$ | async"
     class="navbar-item"
     [ngClass]="{
-       'alarm-bg': machine.state === LineMachineEnums.ALARM,
-       'warning-bg': machine.state === LineMachineEnums.WARNING,
+       'alarm-bg': machine.state === 'ALARM',
+       'warning-bg': machine.state === 'WARNING',
     }"
   >
     <app-machines-navbar-item [machine]="machine"></app-machines-navbar-item>
