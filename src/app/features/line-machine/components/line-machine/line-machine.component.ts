@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Machine } from '../../machine';
+import { Machine } from '@buhler/model/line-machine/machine';
 import { Observable } from 'rxjs';
-import { LineMachineService } from '../../services/line-machine.service';
+import { LineMachineService } from '@buhler/apis/line-machine.service';
 
 @Component({
   selector: 'app-line-machine',

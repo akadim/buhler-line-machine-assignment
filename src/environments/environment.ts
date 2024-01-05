@@ -1,1 +1,4 @@
-export const environment = {};
+// Production environment
+export const environment = {
+  apiUrl: ''
+};

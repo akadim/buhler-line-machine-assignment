@@ -27,6 +27,11 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -66,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "buhler_line_machines_assignment:build:production"
+              "buildTarget": "buhler_line_machines_assignment:build:production"
             },
             "development": {
-              "browserTarget": "buhler_line_machines_assignment:build:development"
+              "buildTarget": "buhler_line_machines_assignment:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "buhler_line_machines_assignment:build"
+            "buildTarget": "buhler_line_machines_assignment:build"
           }
         },
         "test": {

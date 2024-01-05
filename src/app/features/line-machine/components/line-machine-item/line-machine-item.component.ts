@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Machine } from '../../machine';
-import { LineMachineEnums } from '../../line-machine-enums';
+import { Machine } from '@buhler/model/line-machine/machine';
+import { LineMachineEnums } from '@buhler/model/line-machine/line-machine-enums';
 
 @Component({
   selector: 'app-line-machine-item',

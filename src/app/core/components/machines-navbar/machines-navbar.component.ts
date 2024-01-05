@@ -1,7 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Machine } from '../../machine';
-import { LineMachineEnums } from '../../line-machine-enums';
-import { LineMachineService } from '../../services/line-machine.service';
+import { Component, OnInit } from '@angular/core';
+import { Machine } from '@buhler/model/line-machine/machine';
+import { LineMachineService } from '@buhler/apis/line-machine.service';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -11,7 +10,6 @@ import { Observable } from 'rxjs';
 })
 export class MachinesNavbarComponent implements OnInit {
   machines$!: Observable<Machine[]>;
-  protected readonly LineMachineEnums = LineMachineEnums;
 
   constructor(private lineMachineService: LineMachineService) {}
 
