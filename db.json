@@ -1,21 +1,25 @@
 {
   "machines": [
     {
+      "id": 1,
       "title": "Scale",
       "icon": "system_update_alt",
       "state": "RUNNING"
     },
     {
+      "id": 2,
       "title": "Attacher",
       "icon": "list_alt",
       "state": "ALARM"
     },
     {
+      "id": 3,
       "title": "Packer",
       "icon": "call_to_action_outlined",
       "state": "RUNNING"
     },
     {
+      "id": 4,
       "title": "Closer",
       "icon": "grid_on",
       "state": "WARNING"
